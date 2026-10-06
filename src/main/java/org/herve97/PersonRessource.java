@@ -27,7 +27,7 @@ public class PersonRessource {
     @POST
     @Produces(MediaType.TEXT_PLAIN)
     @Consumes(MediaType.APPLICATION_JSON)
-    public String postPerson(Person person) {
+    public void postPerson(Person person) {
         //return person.toString();
         addPersonEvent.fire(new AddPersonEvent(person));
     }
