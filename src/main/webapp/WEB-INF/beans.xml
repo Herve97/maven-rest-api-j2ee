@@ -1,0 +1,5 @@
+<beans>
+    <interceptors>
+        <class>fish.payara.jakarta.ee9.start.TimedInterceptor</class>
+    </interceptors>
+</beans>
